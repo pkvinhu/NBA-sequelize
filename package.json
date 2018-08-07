@@ -1,0 +1,17 @@
+{
+  "name": "sequel-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "model.js",
+  "scripts": {
+    "start": "DATABASE_URL=postgres://localhost:3000 nodemon db.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.18.3",
+    "pg": "^7.4.3",
+    "sequelize": "^4.38.0"
+  }
+}
