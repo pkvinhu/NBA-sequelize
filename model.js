@@ -24,7 +24,7 @@ const Team = NBA.define('teams', {
   division: {
   	type: Sequelize.STRING,
   },
-  players: {
+  numplayers: {
   	type: Sequelize.INTEGER
   }
 })

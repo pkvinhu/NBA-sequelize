@@ -4,7 +4,7 @@
   "description": "",
   "main": "model.js",
   "scripts": {
-    "start": "DATABASE_URL=postgres://localhost:3000 nodemon db.js"
+    "start": "DATABASE_URL=postgres://localhost:5432/NBA nodemon db.js"
   },
   "keywords": [],
   "author": "",

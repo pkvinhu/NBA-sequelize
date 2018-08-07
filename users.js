@@ -11,11 +11,11 @@ const countriez = [
 ]
 
 const teamz = [
-  {name: 'Bulls', city: 'Chicago', conference: 'Eastern', division: 'Central', players: 12},
-  {name: 'Warriors', city: 'San Francisco', conference: 'Western', division: 'Pacific', players: 12},
-  {name: 'Lakers', city: 'Los Angeles', conference: 'Western', division: 'Pacific', players: 12},
-  {name: 'Timberwolves', city: 'Minneapolis', conference: 'Western', division: 'Northwest', players: 12},
-  {name: 'Jazz', city: 'Salt Lake City', conference: 'Western', division: 'Northwest', players: 12}
+  {name: 'Bulls', city: 'Chicago', conference: 'Eastern', division: 'Central', numplayers: 12},
+  {name: 'Warriors', city: 'San Francisco', conference: 'Western', division: 'Pacific', numplayers: 12},
+  {name: 'Lakers', city: 'Los Angeles', conference: 'Western', division: 'Pacific', numplayers: 12},
+  {name: 'Timberwolves', city: 'Minneapolis', conference: 'Western', division: 'Northwest', numplayers: 12},
+  {name: 'Jazz', city: 'Salt Lake City', conference: 'Western', division: 'Northwest', numplayers: 12}
 ]
 
 const eraz = [
