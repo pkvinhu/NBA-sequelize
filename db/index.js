@@ -2,6 +2,8 @@ const Sequelize = require('sequelize');
 const NBA = new Sequelize(process.env.DATABASE_URL, { logging: false});
 const { players, countries, teams } = require('./users');
 
+const sync = () => NBA.sync({force:true});
+
 const syncAndSeed = async()=> {
   await NBA.sync( {force:true} )
   const [ Steph, LBJ, DRose, JimmyBuckets ] = await Promise.all(players.map((player)=>{
@@ -65,6 +67,7 @@ Team.belongsToMany(Player, { through: 'PlayerTeam' });
 
 
 module.exports = { 
+  sync,
   syncAndSeed,
   models: {
     Player,

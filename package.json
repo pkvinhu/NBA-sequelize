@@ -10,7 +10,9 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.2",
     "express": "^4.16.3",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.3",
     "pg": "^7.4.3",
     "react": "^16.4.2",
@@ -27,7 +29,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "DATABASE_URL=postgres://localhost:5432/NBA mocha ./test --recursive --watch",
     "webpack": "./node_modules/webpack/bin/webpack.js",
     "start:dev": "npm run webpack -- --watch --mode=development & DATABASE_URL=postgres://localhost:5432/NBA nodemon server.js --ignore src/ --ignore dist"
   },
